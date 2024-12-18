@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Final Exam</title>
+    <link rel="stylesheet" href="FINAL.css">
+</head>
+<body>
+    <header>
+        <h1>Web Development Final Exam</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>This is the home page for the Web Development Final Exam. Use the navigation bar to explore projects and contact information.</p>
+        </section>
+
+        <section id="projects" style="margin-top: 50px;">
+            <h2>Projects</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Project 1</td>
+                        <td>Description of Project 1</td>
+                        <td>2024-01-01</td>
+                    </tr>
+                    <tr>
+                        <td>Project 2</td>
+                        <td>Description of Project 2</td>
+                        <td>2024-02-01</td>
+                    </tr>
+                    <tr>
+                        <td>Project 3</td>
+                        <td>Description of Project 3</td>
+                        <td>2024-03-01</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <button id="add-project">Add New Project</button>
+
+            <button id="toggle-resources">Toggle Resources</button>
+
+            <ul id="resources-list" style="display: none;">
+                <li>Resource 1</li>
+                <li>Resource 2</li>
+                <li>Resource 3</li>
+            </ul>
+        </section>
+
+        <section id="contact" style="margin-top: 50px;">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer style="margin-top: 50px;">
+        <p>&copy; Maitrav Patel, <span id="year"></span></p>
+    </footer>
+
+    <button id="scroll-to-top">Scroll to Top</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="FINAL.js"></script>
+</body>
+</html>
